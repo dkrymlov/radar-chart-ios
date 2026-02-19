@@ -9,4 +9,8 @@ import SwiftUI
 
 public struct ChartBackgroundConfig {
     public let backgroungColor: Color
+    
+    public init(backgroungColor: Color) {
+        self.backgroungColor = backgroungColor
+    }
 }
