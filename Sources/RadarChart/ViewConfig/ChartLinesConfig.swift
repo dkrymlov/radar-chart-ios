@@ -10,4 +10,12 @@ import SwiftUI
 public struct ChartLinesConfig {
     public var lineWidth: CGFloat = 1.0
     public var lineColor: Color = .gray.opacity(0.3)
+    
+    public init(
+        lineWidth: CGFloat = 1.0,
+        lineColor: Color = .gray.opacity(0.3)
+    ) {
+        self.lineWidth = lineWidth
+        self.lineColor = lineColor
+    }
 }

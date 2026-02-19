@@ -10,8 +10,24 @@ import SwiftUI
 public struct RadarChartConfig {
     public let circleSteps: Int
     public let backgroundConfig: ChartBackgroundConfig
-    public var chartConfig: ChartConfig = .init()
-    public var linesConfig: ChartLinesConfig = .init()
-    public var dataPointsConfig: ChartDataPointsConfig = .init()
-    public var fontsConfig: ChartFontsConfig = .init()
+    public var chartConfig: ChartConfig
+    public var linesConfig: ChartLinesConfig
+    public var dataPointsConfig: ChartDataPointsConfig
+    public var fontsConfig: ChartFontsConfig
+    
+    public init(
+        circleSteps: Int,
+        backgroundConfig: ChartBackgroundConfig,
+        chartConfig: ChartConfig = .init(),
+        linesConfig: ChartLinesConfig = .init(),
+        dataPointsConfig: ChartDataPointsConfig = .init(),
+        fontsConfig: ChartFontsConfig = .init()
+    ) {
+        self.circleSteps = circleSteps
+        self.backgroundConfig = backgroundConfig
+        self.chartConfig = chartConfig
+        self.linesConfig = linesConfig
+        self.dataPointsConfig = dataPointsConfig
+        self.fontsConfig = fontsConfig
+    }
 }

@@ -8,8 +8,20 @@
 import SwiftUI
 
 public struct ChartDataPointsConfig {
-    public var pointSize: CGSize = .init(width: 8, height: 8)
-    public var pointColor: Color = .yellow
-    public var pointStrokeColor: Color = .white
-    public var pointStrokeWidth: CGFloat = 2.0
+    public var pointSize: CGSize
+    public var pointColor: Color
+    public var pointStrokeColor: Color
+    public var pointStrokeWidth: CGFloat
+    
+    public init(
+        pointSize: CGSize = .init(width: 8, height: 8),
+        pointColor: Color = .yellow,
+        pointStrokeColor: Color = .white,
+        pointStrokeWidth: CGFloat = 2.0
+    ) {
+        self.pointSize = pointSize
+        self.pointColor = pointColor
+        self.pointStrokeColor = pointStrokeColor
+        self.pointStrokeWidth = pointStrokeWidth
+    }
 }

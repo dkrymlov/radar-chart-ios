@@ -8,6 +8,14 @@
 import SwiftUI
 
 public struct ChartFontsConfig {
-    public var fontSizeMultiplier: CGFloat = 0.045
-    public var fontWeight: Font.Weight = .semibold
+    public var fontSizeMultiplier: CGFloat
+    public var fontWeight: Font.Weight
+    
+    public init(
+        fontSizeMultiplier: CGFloat = 0.045,
+        fontWeight: Font.Weight = .semibold
+    ) {
+        self.fontSizeMultiplier = fontSizeMultiplier
+        self.fontWeight = fontWeight
+    }
 }
