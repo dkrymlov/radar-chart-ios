@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol RadarChartDataPointType: Identifiable {
+public protocol RadarChartDataPointType: Identifiable, Codable {
     var id: String { get }
     var label: String { get }
     var value: Double { get set }
