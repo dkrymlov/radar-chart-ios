@@ -13,7 +13,7 @@ public struct RadarChartDataPoint: RadarChartDataPointType {
     public let emoji: String?
     public var value: Double
     
-    init(id: String, label: String, value: Double, emoji: String? = nil) {
+    public init(id: String, label: String, value: Double, emoji: String? = nil) {
         self.id = id
         self.label = label
         self.value = value
