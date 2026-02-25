@@ -152,7 +152,7 @@ public struct RadarChartView<CenterContent: View>: View {
         ForEach(0..<axisCount, id: \.self) { index in
             let item = viewModel.data[index]
             let angle = viewModel.angleForIndex(index)
-            let labelPoint = viewModel.pointOnCircle(center: center, radius: radius * 1.15, angle: angle)
+            let labelPoint = viewModel.pointOnCircle(center: center, radius: radius * 1.25, angle: angle)
             VStack(spacing: 2) {
                 Text(item.label).fontWeight(fontsConfig.fontWeight).foregroundColor(.primary)
                 if let icon = item.emoji { Text(icon) }
