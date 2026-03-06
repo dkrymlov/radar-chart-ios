@@ -84,7 +84,7 @@ public struct RadarChartView<CenterContent: View>: View {
                 drawLabels(center: center, radius: radius, fontSize: fontSize)
                     .opacity(isVisible ? 1 : 0)
             }
-            .onAppear {
+            .task {
                 withAnimation(.easeOut(duration: 0.8)) {
                     self.isVisible = true
                 }
